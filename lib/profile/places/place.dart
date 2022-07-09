@@ -12,7 +12,7 @@ class Place extends StatelessWidget {
   Widget build(BuildContext context) {
     final photoCard = Container(
       margin: const EdgeInsets.only(top: 10.0, bottom: 70.0),
-      height: 220.0,
+      height: 250.0,
       decoration: BoxDecoration(
           image: DecorationImage(fit: BoxFit.cover, image: AssetImage(image)),
           borderRadius: const BorderRadius.all(Radius.circular(20.0)),
