@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:trips_app/button_purple.dart';
+import 'package:trips_app/home/widgets/button_purple.dart';
 
 class DescriptonPlace extends StatelessWidget {
   String namePlace;
   int stars;
   String descriptionPlace;
+  String descriptionSecondary;
 
-  DescriptonPlace(this.namePlace, this.stars, this.descriptionPlace);
+  DescriptonPlace(this.namePlace, this.stars, this.descriptionPlace,
+      this.descriptionSecondary);
 
   @override
   Widget build(BuildContext context) {
@@ -48,6 +50,19 @@ class DescriptonPlace extends StatelessWidget {
       ),
     );
 
+    final description_secondary = Container(
+      margin: const EdgeInsets.only(top: 20, left: 20, right: 20),
+      child: Text(
+        descriptionSecondary,
+        style: const TextStyle(
+          color: Colors.black54,
+          fontSize: 16,
+          fontWeight: FontWeight.bold,
+          fontFamily: "Lato",
+        ),
+      ),
+    );
+
     final title_stars = Row(children: [
       Container(
         margin: const EdgeInsets.only(top: 320, left: 20, right: 20),
@@ -77,7 +92,7 @@ class DescriptonPlace extends StatelessWidget {
       children: [
         title_stars,
         description,
-        description,
+        description_secondary,
         ButtonPurple(),
       ],
     );

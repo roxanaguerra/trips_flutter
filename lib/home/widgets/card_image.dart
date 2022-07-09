@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trips_app/home/widgets/floating_action_button_green.dart';
 
 class CardImage extends StatelessWidget {
   String pathImage = "assets/img/beach_palm.jpeg";
@@ -26,6 +27,12 @@ class CardImage extends StatelessWidget {
           ]),
     );
 
-    return card;
+    return Stack(
+      alignment: const Alignment(0.9, 1.1),
+      children: [
+        card,
+        const FloatingActionButtonGreen(),
+      ],
+    );
   }
 }
