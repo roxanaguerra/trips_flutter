@@ -9,9 +9,8 @@ class ButtonPurple extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: (() => {
-            print("navegar"),
             ScaffoldMessenger.of(context)
-                .showSnackBar(SnackBar(content: Text("Navegando...")))
+                .showSnackBar(const SnackBar(content: Text("Navegando...")))
           }),
       child: Container(
         margin: const EdgeInsets.only(top: 30.0, left: 20, right: 20),
@@ -29,8 +28,8 @@ class ButtonPurple extends StatelessWidget {
         child: Center(
             child: Text(
           buttonText,
-          style:
-              TextStyle(fontFamily: "Lato", fontSize: 18, color: Colors.white),
+          style: const TextStyle(
+              fontFamily: "Lato", fontSize: 18, color: Colors.white),
         )),
       ),
     );

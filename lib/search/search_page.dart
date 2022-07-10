@@ -10,9 +10,9 @@ class SearchPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        BackgroundProfile(),
+        const BackgroundProfile(),
         ListView(
-          children: [
+          children: const [
             HeaderSearch(),
             SizedBox(
               height: 15,

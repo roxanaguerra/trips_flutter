@@ -5,7 +5,12 @@ class UserInfo extends StatelessWidget {
   String name;
   String email;
 
-  UserInfo({required this.imgProfile, required this.name, required this.email});
+  UserInfo(
+      {Key? key,
+      required this.imgProfile,
+      required this.name,
+      required this.email})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

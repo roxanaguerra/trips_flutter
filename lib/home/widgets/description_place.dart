@@ -5,15 +5,16 @@ class DescriptonPlace extends StatelessWidget {
   String namePlace;
   int stars;
   String descriptionPlace;
-  String descriptionSecondary;
+  String descriptionSecondaryPlace;
 
   DescriptonPlace(this.namePlace, this.stars, this.descriptionPlace,
-      this.descriptionSecondary);
+      this.descriptionSecondaryPlace,
+      {Key? key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    final start_half = Container(
+    final startHalf = Container(
       margin: const EdgeInsets.only(top: 323, right: 3),
       child: const Icon(
         Icons.star_half,
@@ -21,7 +22,7 @@ class DescriptonPlace extends StatelessWidget {
       ),
     );
 
-    final star_border = Container(
+    final starBorder = Container(
       margin: const EdgeInsets.only(top: 323, right: 3),
       child: const Icon(
         Icons.star_border,
@@ -50,10 +51,10 @@ class DescriptonPlace extends StatelessWidget {
       ),
     );
 
-    final description_secondary = Container(
+    final descriptionSecondary = Container(
       margin: const EdgeInsets.only(top: 20, left: 20, right: 20),
       child: Text(
-        descriptionSecondary,
+        descriptionSecondaryPlace,
         style: const TextStyle(
           color: Colors.black54,
           fontSize: 16,
@@ -63,7 +64,7 @@ class DescriptonPlace extends StatelessWidget {
       ),
     );
 
-    final title_stars = Row(children: [
+    final titleStars = Row(children: [
       Container(
         margin: const EdgeInsets.only(top: 320, left: 20, right: 20),
         child: Text(
@@ -78,8 +79,8 @@ class DescriptonPlace extends StatelessWidget {
           star,
           star,
           star,
-          start_half,
-          star_border,
+          startHalf,
+          starBorder,
         ],
       ),
       // Column(
@@ -90,9 +91,9 @@ class DescriptonPlace extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        title_stars,
+        titleStars,
         description,
-        description_secondary,
+        descriptionSecondary,
         ButtonPurple(),
       ],
     );

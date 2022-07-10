@@ -10,10 +10,10 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        BackgroundProfile(),
+        const BackgroundProfile(),
         ListView(
           children: [
-            HeaderProfile(),
+            const HeaderProfile(),
             PlacesProfile(),
           ],
         )

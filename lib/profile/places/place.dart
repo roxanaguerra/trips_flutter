@@ -6,7 +6,7 @@ class Place extends StatelessWidget {
   String image;
   PlaceModel infoPlace;
 
-  Place(this.image, this.infoPlace);
+  Place(this.image, this.infoPlace, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

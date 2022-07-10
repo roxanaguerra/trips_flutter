@@ -5,7 +5,7 @@ import 'package:trips_app/models/place_model.dart';
 class PlaceInfo extends StatelessWidget {
   PlaceModel placeInfo;
 
-  PlaceInfo(this.placeInfo);
+  PlaceInfo(this.placeInfo, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +44,7 @@ class PlaceInfo extends StatelessWidget {
             ]));
 
     final steps = Text(
-      '${this.placeInfo.steps}',
+      this.placeInfo.steps,
       style: const TextStyle(
           fontFamily: 'Lato',
           fontSize: 14.0,

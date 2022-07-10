@@ -29,10 +29,13 @@ class PlacesProfile extends StatelessWidget {
       'Scenery & Photography',
       'A 9 km de la ciudad de Abancay');
 
+  PlacesProfile({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 10.0, left: 20.0, right: 20.0, bottom: 10.0),
+      margin: const EdgeInsets.only(
+          top: 10.0, left: 20.0, right: 20.0, bottom: 10.0),
       child: Column(
         children: <Widget>[
           Place('assets/img/ampay.jpg', info),

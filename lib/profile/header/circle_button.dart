@@ -4,13 +4,15 @@ class CircleButton extends StatefulWidget {
   bool mini;
   IconData iconButton;
   double iconSize;
-  var color;
+  Color color;
 
   CircleButton(
-      {required this.mini,
+      {Key? key,
+      required this.mini,
       required this.iconButton,
       required this.iconSize,
-      required this.color});
+      required this.color})
+      : super(key: key);
 
   @override
   State<StatefulWidget> createState() {
@@ -23,7 +25,7 @@ class _CircleButton extends State<CircleButton> {
   bool mini;
   IconData iconButton;
   double iconSize;
-  var color;
+  Color color;
 
   _CircleButton(
       {required this.mini,
