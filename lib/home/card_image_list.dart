@@ -9,7 +9,7 @@ class CardImageList extends StatelessWidget {
     return Container(
       height: 350.0,
       child: ListView(
-        padding: const EdgeInsets.all(25.0),
+        padding: const EdgeInsets.all(30.0),
         scrollDirection: Axis.horizontal,
         children: [
           CardImage(pathImage: "assets/img/ampay.jpg"),

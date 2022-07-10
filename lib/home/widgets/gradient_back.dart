@@ -29,7 +29,7 @@ class GradientBack extends StatelessWidget {
             fontFamily: "Lato",
             fontWeight: FontWeight.bold),
       ),
-      alignment: const Alignment(-0.9, -0.6),
+      alignment: const Alignment(-0.9, -0.4),
     );
   }
 }
